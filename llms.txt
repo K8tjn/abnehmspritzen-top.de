@@ -12,7 +12,7 @@ This is the `llms.txt` file for [abnehmspritzen-top.de](https://abnehmspritzen-t
 - **Mysimba / Xenical**
 - **Wegovy Oral**
 
-The website content is strictly in German and primarily focuses on efficacy benchmarks, side effects, dosage, and price comparisons for these medications.
+The website content  is strictly in German and primarily focuses on efficacy benchmarks, side effects, dosage, and price comparisons for these medications.
 
 ## Guidelines for LLM Crawlers
 - **Language**: The main language of the site is German (`de`).
