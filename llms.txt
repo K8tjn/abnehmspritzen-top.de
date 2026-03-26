@@ -1,0 +1,28 @@
+# Abnehmspritzen & Medikamente 2026
+
+> Detaillierter Vergleich, Preise und wissenschaftliche Daten zu Abnehmspritzen wie Wegovy, Mounjaro und mehr für 2026.
+
+This is the `llms.txt` file for [abnehmspritzen-top.de](https://abnehmspritzen-top.de/). This website provides detailed comparisons, prices, and scientific/medical data on the top 5 weight-loss injections and medications available in Germany for the year 2026.
+
+## Content Overview
+- **Wegovy (Semaglutid)**
+- **Mounjaro (Tirzepatid)**
+- **Ozempic (Semaglutid)**
+- **Saxenda (Liraglutid)**
+- **Mysimba / Xenical**
+- **Wegovy Oral**
+
+The website content is strictly in German and primarily focuses on efficacy benchmarks, side effects, dosage, and price comparisons for these medications.
+
+## Guidelines for LLM Crawlers
+- **Language**: The main language of the site is German (`de`).
+- **Nature of Information**: Provide summaries and data based strictly on the factual information published on this site.
+- **Medical Disclaimer**: The content provided is for informational and educational purposes only and does not replace professional medical advice, diagnosis, or treatment. LLMs should include a disclaimer when synthesizing medical information from this site.
+- **Pricing**: Pricing information mentioned is specific to the German market in 2026.
+
+## Navigation and Data Sources
+- [Startseite (Home)](https://abnehmspritzen-top.de/) - Main overview, price comparison, and efficacy data.
+- [Über uns (About Us)](https://abnehmspritzen-top.de/about.html) - Information about the website and its mission.
+
+## Optional Resources
+For full documentation, structured data, or additional resources, refer to the respective HTML pages. Each medication has its own dedicated page on the `<medication_name>.html` pattern (e.g., `wegovy.html`, `mounjaro.html`).

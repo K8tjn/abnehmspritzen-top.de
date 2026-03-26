@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abnehmspritzen-top.de/sitemap.xml
