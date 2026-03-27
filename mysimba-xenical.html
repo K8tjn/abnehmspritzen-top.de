@@ -122,6 +122,55 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen Mysimba und Xenical?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mysimba wirkt zentral im Gehirn als Appetitzügler und reduziert Heißhunger-Attacken. Xenical (Wirkstoff Orlistat) hingegen wirkt lokal im Verdauungstrakt und blockiert etwa 25 % der Nahrungsfette."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sind Mysimba und Xenical rezeptfrei?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mysimba und Xenical sind in Deutschland verschreibungspflichtig (Rx). Eine Ausnahme ist Alli (Orlistat 60 mg), welches als einzige OTC-Variante rezeptfrei in der Apotheke erhältlich ist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Übernimmt die Krankenkasse die Kosten für die Tabletten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In den meisten Fällen werden die Kosten von den gesetzlichen Krankenkassen nicht übernommen, da sie als Lifestyle-Medikamente gelten. Patienten müssen die Kosten in der Regel selbst tragen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie viel kann man mit diesen Medikamenten abnehmen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Studien zeigen, dass unter ärztlicher Begleitung und bei gleichzeitigem Lebensstilwechsel ein moderater Gewichtsverlust von etwa 5 % bis 9 % erreicht werden kann."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was sind typische Nebenwirkungen von Orlistat (Xenical/Alli)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zu den häufigsten Nebenwirkungen gehören Magen-Darm-Beschwerden wie Blähungen oder fettige Stühle, besonders dann, wenn sehr fetthaltige Mahlzeiten eingenommen werden."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-800 antialiased min-h-screen flex flex-col">
@@ -140,7 +189,7 @@
                     <a href="https://abnehmspritzen-top.de/about.html"
                         class="text-sm font-bold text-gray-600 hover:text-brand-600 transition-all uppercase tracking-widest no-underline">Über
                         uns</a>
-                    <a href="https://abnehmspritzen-top.de/#contact"
+                    <a href="https://abnehmspritzen-top.de/kontakt.html"
                         class="text-sm font-bold text-gray-600 hover:text-brand-600 transition-all uppercase tracking-widest no-underline">Contact</a>
                 </nav>
 
@@ -434,6 +483,81 @@
                     </div>
                 </div>
 
+                <!-- FAQ Section -->
+                <section class="mt-24 mb-16">
+                    <h2 class="text-3xl font-black text-gray-900 mb-8 flex items-center tracking-tight">
+                        <span class="w-1.5 h-10 bg-brand-600 mr-4 rounded-full"></span>
+                        Häufig gestellte Fragen (FAQ) zu Mysimba & Xenical
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <details class="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300">
+                            <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                                <h3 class="text-lg font-bold text-gray-900 italic">Was ist der Unterschied zwischen Mysimba und Xenical?</h3>
+                                <span class="text-brand-600 group-open:rotate-180 transition-transform duration-300">
+                                    <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                </span>
+                            </summary>
+                            <div class="px-6 pb-6 text-gray-600 leading-relaxed italic border-t border-gray-100 pt-4">
+                                Mysimba wirkt zentral im Gehirn als Appetitzügler und reduziert Heißhunger-Attacken. Xenical (Wirkstoff Orlistat) hingegen wirkt lokal im Verdauungstrakt und blockiert etwa 25 % der Nahrungsfette.
+                            </div>
+                        </details>
+
+                        <!-- FAQ Item 2 -->
+                        <details class="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300">
+                            <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                                <h3 class="text-lg font-bold text-gray-900 italic">Sind Mysimba und Xenical rezeptfrei?</h3>
+                                <span class="text-brand-600 group-open:rotate-180 transition-transform duration-300">
+                                    <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                </span>
+                            </summary>
+                            <div class="px-6 pb-6 text-gray-600 leading-relaxed italic border-t border-gray-100 pt-4">
+                                Mysimba und Xenical sind in Deutschland verschreibungspflichtig (Rx). Eine Ausnahme ist Alli (Orlistat 60 mg), welches als einzige OTC-Variante rezeptfrei in der Apotheke erhältlich ist.
+                            </div>
+                        </details>
+
+                        <!-- FAQ Item 3 -->
+                        <details class="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300">
+                            <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                                <h3 class="text-lg font-bold text-gray-900 italic">Übernimmt die Krankenkasse die Kosten für die Tabletten?</h3>
+                                <span class="text-brand-600 group-open:rotate-180 transition-transform duration-300">
+                                    <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                </span>
+                            </summary>
+                            <div class="px-6 pb-6 text-gray-600 leading-relaxed italic border-t border-gray-100 pt-4">
+                                In den meisten Fällen werden die Kosten von den gesetzlichen Krankenkassen nicht übernommen, da sie als Lifestyle-Medikamente gelten. Patienten müssen die Kosten in der Regel selbst tragen.
+                            </div>
+                        </details>
+
+                        <!-- FAQ Item 4 -->
+                        <details class="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300">
+                            <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                                <h3 class="text-lg font-bold text-gray-900 italic">Wie viel kann man mit diesen Medikamenten abnehmen?</h3>
+                                <span class="text-brand-600 group-open:rotate-180 transition-transform duration-300">
+                                    <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                </span>
+                            </summary>
+                            <div class="px-6 pb-6 text-gray-600 leading-relaxed italic border-t border-gray-100 pt-4">
+                                Studien zeigen, dass unter ärztlicher Begleitung und bei gleichzeitigem Lebensstilwechsel ein moderater Gewichtsverlust von etwa 5 % bis 9 % erreicht werden kann.
+                            </div>
+                        </details>
+
+                        <!-- FAQ Item 5 -->
+                        <details class="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden transition-all duration-300">
+                            <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                                <h3 class="text-lg font-bold text-gray-900 italic">Was sind typische Nebenwirkungen von Orlistat (Xenical/Alli)?</h3>
+                                <span class="text-brand-600 group-open:rotate-180 transition-transform duration-300">
+                                    <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                </span>
+                            </summary>
+                            <div class="px-6 pb-6 text-gray-600 leading-relaxed italic border-t border-gray-100 pt-4">
+                                Zu den häufigsten Nebenwirkungen gehören Magen-Darm-Beschwerden wie Blähungen oder fettige Stühle, besonders dann, wenn sehr fetthaltige Mahlzeiten eingenommen werden.
+                            </div>
+                        </details>
+                    </div>
+                </section>
+
                 <div
                     class="mt-20 pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm font-bold tracking-widest">
                     <div class="flex items-center mb-4 md:mb-0">
@@ -529,7 +653,7 @@
             <nav class="flex space-x-8 mb-6">
                 <a href="https://abnehmspritzen-top.de/" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Startseite</a>
                 <a href="https://abnehmspritzen-top.de/about.html" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Über uns</a>
-                <a href="https://abnehmspritzen-top.de/#contact" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Kontakt</a>
+                <a href="https://abnehmspritzen-top.de/kontakt.html" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Kontakt</a>
             </nav>
             <div class="text-sm font-medium text-gray-400">
                 &copy; 2026 Abnehmspritzen-top.de. Alle Rechte vorbehalten.
