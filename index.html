@@ -75,7 +75,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
     </style>
-    <!-- Schema.org Organization und WebPage Markup -->
+    <!-- Schema.org MedicalWebPage, FAQPage und Organization Markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -91,7 +91,7 @@
                 }
             },
             {
-                "@type": "WebPage",
+                "@type": "MedicalWebPage",
                 "@id": "https://abnehmspritzen-top.de/#webpage",
                 "url": "https://abnehmspritzen-top.de/",
                 "name": "Abnehmspritzen & Medikamente 2026: Top 6 im Vergleich",
@@ -102,7 +102,43 @@
                     "@id": "https://abnehmspritzen-top.de/images/logo.jpg"
                 },
                 "description": "Entdecken Sie die Top 6 Abnehmspritzen und Medikamente für 2026. Detaillierter Vergleich, Preise, Erfahrungen und wissenschaftliche Daten zu Wegovy, Mounjaro, Ozempic und mehr.",
-                "inLanguage": "de-DE"
+                "inLanguage": "de-DE",
+                "about": {
+                    "@type": "MedicalCondition",
+                    "name": "Adipositas (Übergewicht)"
+                },
+                "audience": {
+                    "@type": "MedicalAudience",
+                    "audienceType": "Patienten"
+                },
+                "reviewedBy": {
+                    "@type": "Physician",
+                    "name": "Dr. med. Eva Müller"
+                },
+                "lastReviewed": "2026-03-01",
+                "specialty": "https://schema.org/Endocrine"
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://abnehmspritzen-top.de/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Was kostet die Abnehmspritze?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Die Preise für die Abnehmspritze variieren stark je nach Präparat, Packungsgröße und Anbieter. Die monatlichen Kosten liegen in der Regel zwischen 170 € und 320 €. Wer die Medikamente online erwirbt, kann durch Preisvergleiche für Selbstzahler oftmals Geld sparen."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Sind Abnehm-Gummibärchen eine Alternative zu Abnehmspritzen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nein. Bei Produkten wie sogenannten 'Abnehm-Gummibärchen', die oft mit falschen Behauptungen (z. B. Fake-Berichte aus der Höhle der Löwen) werben, handelt es sich meistens um Abzocke ohne klinisch belegbare Wirkung. Reale Abnehmerfolge werden durch medizinisch zugelassene GLP-1 und GIP-Rezeptor-Agonisten erzielt."
+                        }
+                    }
+                ]
             }
         ]
     }
