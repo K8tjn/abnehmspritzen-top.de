@@ -60,151 +60,130 @@
             font-weight: 700;
         }
     </style>
-    <!-- Schema.org Organization Markup -->
+    <!-- Combined SEO & Schema.org Markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Abnehmspritzen-top.de",
-        "url": "https://abnehmspritzen-top.de/",
-        "logo": "https://abnehmspritzen-top.de/images/logo.jpg",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer service",
-            "email": "support@abnehmspritzen-top.de",
-            "availableLanguage": "German"
-        }
-    }
-    </script>
-    <!-- BreadcrumbList Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://abnehmspritzen-top.de/" },
-            { "@type": "ListItem", "position": 2, "name": "Ozempic (Semaglutid)", "item": "https://abnehmspritzen-top.de/ozempic.html" }
-        ]
-    }
-    </script>
-    <!-- Medical Web Page Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MedicalWebPage",
-        "name": "Ozempic (Semaglutid) zum Abnehmen & Diabetes: Guide 2026",
-        "description": "Informationen über Ozempic zur Behandlung von Typ-2-Diabetes und Gewichtsreduktion, inklusive Dosierungsschema und Preisen in Deutschland.",
-        "author": {
-            "@type": "Person",
-            "name": "Dr. med. Lukas Richter"
-        },
-        "reviewedBy": {
-            "@type": "Person",
-            "name": "Dr. med. Julia Sommer"
-        },
-        "url": "https://abnehmspritzen-top.de/ozempic.html",
-        "inLanguage": "de-DE",
-        "about": {
-            "@type": "Drug",
-            "name": "Ozempic",
-            "nonProprietaryName": "Semaglutid",
-            "activeIngredient": "Semaglutid",
-            "drugClass": "GLP-1 Rezeptor-Agonist",
-            "indication": "Typ-2-Diabetes mellitus, Gewichtsmanagement (off-label)",
-            "manufacturer": {
+        "@graph": [
+            {
                 "@type": "Organization",
-                "name": "Novo Nordisk"
+                "@id": "https://abnehmspritzen-top.de/#organization",
+                "name": "Abnehmspritzen-top.de",
+                "url": "https://abnehmspritzen-top.de/",
+                "logo": "https://abnehmspritzen-top.de/images/logo.jpg",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer service",
+                    "email": "support@abnehmspritzen-top.de",
+                    "availableLanguage": "German"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://abnehmspritzen-top.de/ozempic.html#breadcrumb",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://abnehmspritzen-top.de/" },
+                    { "@type": "ListItem", "position": 2, "name": "Ozempic (Semaglutid)", "item": "https://abnehmspritzen-top.de/ozempic.html" }
+                ]
+            },
+            {
+                "@type": "MedicalWebPage",
+                "@id": "https://abnehmspritzen-top.de/ozempic.html",
+                "name": "Ozempic (Semaglutid) zum Abnehmen & Diabetes: Guide 2026",
+                "description": "Erfahren Sie alles über Ozempic zur Behandlung von Typ-2-Diabetes und Gewichtsreduktion, inklusive Dosierungsschema, Kosten und aktuellen Studiendaten 2026.",
+                "author": {
+                    "@type": "Person",
+                    "name": "Dr. med. Lukas Richter",
+                    "url": "https://abnehmspritzen-top.de/about.html#dr-richter"
+                },
+                "reviewedBy": {
+                    "@type": "Person",
+                    "name": "Dr. med. Julia Sommer",
+                    "url": "https://abnehmspritzen-top.de/about.html#dr-sommer"
+                },
+                "publisher": { "@id": "https://abnehmspritzen-top.de/#organization" },
+                "inLanguage": "de-DE",
+                "datePublished": "2026-01-01",
+                "dateModified": "2026-03-26",
+                "about": {
+                    "@type": "Drug",
+                    "name": "Ozempic",
+                    "nonProprietaryName": "Semaglutid",
+                    "activeIngredient": "Semaglutid",
+                    "drugClass": "GLP-1 Rezeptor-Agonist",
+                    "indication": "Typ-2-Diabetes mellitus, Gewichtsmanagement (off-label)",
+                    "manufacturer": {
+                        "@type": "Organization",
+                        "name": "Novo Nordisk"
+                    },
+                    "description": "Ozempic (Semaglutid) ist ein bewährtes Medikament zur Behandlung von Typ-2-Diabetes und Gewichtsmanagement.",
+                    "image": "https://abnehmspritzen-top.de/images/ozempic_pen.jpg",
+                    "offers": {
+                        "@type": "AggregateOffer",
+                        "url": "https://abnehmspritzen-top.de/ozempic.html",
+                        "priceCurrency": "EUR",
+                        "lowPrice": "150.00",
+                        "highPrice": "300.00",
+                        "availability": "https://schema.org/InStock",
+                        "offerCount": "3"
+                    }
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://abnehmspritzen-top.de/ozempic.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Was ist Ozempic und wie hilft es beim Abnehmen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ozempic (Wirkstoff Semaglutid) ist primär ein Medikament zur Behandlung von Typ-2-Diabetes. Es ahmt das körpereigene Hormon GLP-1 nach, verzögert die Magenentleerung, hemmt den Appetit und unterstützt so effektiv die Gewichtsabnahme."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wie viel Gewicht kann man mit Ozempic abnehmen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Der durchschnittliche Gewichtsverlust liegt laut Studien bei etwa 5 bis 10 % des Ausgangsgewichts, abhängig von der individuellen Ausgangssituation und begleitenden Lebensstilanpassungen."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Welche Dosierung wird für Ozempic empfohlen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Die Therapie beginnt einschleichend mit 0,25 mg wöchentlich. Nach schrittweiser Erhöhung liegt die Standard-Erhaltungsdosis bei 1,0 mg. Für schwer einstellbare Fälle gibt es seit 2026 zudem eine Erhaltungsdosis von 2,0 mg."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Was kostet Ozempic für Selbstzahler?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Die Kosten für Privatzahler liegen im Jahr 2026 in der Regel zwischen 150 € und 300 € pro Pen. Bei Behandlung von Diabetes übernimmt die GKV meist die Kosten (ca. 10 € Zuzahlung)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Gibt es eine günstigere Alternative zu Ozempic?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja: Wegovy ist offiziell bei Adipositas zugelassen, Mounjaro (Tirzepatid) als dualer GIP/GLP-1-Agonist erzielt noch stärkere Gewichtsreduktionen, und Nevolat ist das günstigste Semaglutid-Generikum (ca. 79–129 €)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Was passiert, wenn man Ozempic absetzt?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Nach dem Absetzen von Ozempic nehmen viele Patienten das verlorene Gewicht wieder zu, da der appetithemmende Effekt entfällt. Der Blutzucker kann ebenfalls ansteigen. Ein ärztlich begleitetes schrittweises Absetzen mit anschließender Alternativtherapie ist empfehlenswert."
+                        }
+                    }
+                ]
             }
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Abnehmspritzen-top.de"
-        },
-        "audience": {
-            "@type": "MedicalAudience",
-            "audienceType": "Patient"
-        },
-        "lastReviewed": "2026-03-26"
-    }
-    </script>
-    <!-- Product Schema for Price & Availability (Rich Snippets) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Ozempic (Semaglutid) Fertigpen",
-        "image": "https://abnehmspritzen-top.de/images/ozempic_pen.jpg",
-        "description": "Ozempic (Semaglutid) ist ein bewährtes Medikament zur Behandlung von Typ-2-Diabetes und Gewichtsmanagement. Erhältlich in verschiedenen Dosierungen.",
-        "brand": {
-            "@type": "Brand",
-            "name": "Novo Nordisk"
-        },
-        "offers": {
-            "@type": "AggregateOffer",
-            "url": "https://abnehmspritzen-top.de/ozempic.html",
-            "priceCurrency": "EUR",
-            "lowPrice": "150.00",
-            "highPrice": "300.00",
-            "availability": "https://schema.org/InStock",
-            "offerCount": "3"
-        }
-    }
-    </script>
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Was ist Ozempic und wie hilft es beim Abnehmen?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ozempic (Wirkstoff Semaglutid) ist primär ein Medikament zur Behandlung von Typ-2-Diabetes. Es ahmt das körpereigene Hormon GLP-1 nach, verzögert die Magenentleerung, hemmt den Appetit und unterstützt so effektiv die Gewichtsabnahme."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie viel Gewicht kann man mit Ozempic abnehmen?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Der durchschnittliche Gewichtsverlust liegt laut Studien bei etwa 5 bis 10 % des Ausgangsgewichts, abhängig von der individuellen Ausgangssituation und begleitenden Lebensstilanpassungen."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Welche Dosierung wird für Ozempic empfohlen?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Die Therapie beginnt einschleichend mit 0,25 mg wöchentlich. Nach schrittweiser Erhöhung liegt die Standard-Erhaltungsdosis bei 1,0 mg. Für schwer einstellbare Fälle gibt es seit 2026 zudem eine Erhaltungsdosis von 2,0 mg."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Was kostet Ozempic für Selbstzahler?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Die Kosten für Privatzahler liegen im Jahr 2026 in der Regel zwischen 150 € und 300 € pro Pen. Bei Behandlung von Diabetes übernimmt die GKV meist die Kosten (ca. 10 € Zuzahlung)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Gibt es eine günstigere Alternative zu Ozempic?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja: Wegovy ist offiziell bei Adipositas zugelassen, Mounjaro (Tirzepatid) als dualer GIP/GLP-1-Agonist erzielt noch stärkere Gewichtsreduktionen, und Nevolat ist das günstigste Semaglutid-Generikum (ca. 79–129 €)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Was passiert, wenn man Ozempic absetzt?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nach dem Absetzen von Ozempic nehmen viele Patienten das verlorene Gewicht wieder zu, da der appetithemmende Effekt entfällt. Der Blutzucker kann ebenfalls ansteigen. Ein ärztlich begleitetes schrittweises Absetzen mit anschließender Alternativtherapie ist empfehlenswert."
-          }
-        }
-      ]
+        ]
     }
     </script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

@@ -52,161 +52,124 @@
             font-weight: 700;
         }
     </style>
-    <!-- Schema.org Organization Markup -->
+    <!-- Combined SEO & Schema.org Markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Abnehmspritzen-top.de",
-        "url": "https://abnehmspritzen-top.de/",
-        "logo": "https://abnehmspritzen-top.de/images/logo.jpg"
-    }
-    </script>
-    <!-- Medical Web Page Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": ["MedicalWebPage", "Article"],
-        "name": "Wegovy (Semaglutid) zum Abnehmen: Dosierung, Preis und Verfügbarkeit 2026",
-        "headline": "Wegovy (Semaglutid): Effektiv Abnehmen mit der Spritze",
-        "description": "Informationen über Wegovy zur Gewichtsreduktion, inklusive Dosierungsschema, Kosten in Deutschland und klinische Studiendaten.",
-        "author": {
-            "@type": "Person",
-            "name": "Dr. med. Thomas Meyer"
-        },
-        "reviewedBy": {
-            "@type": "Person",
-            "name": "Dr. rer. nat. Julia Fischer"
-        },
-        "about": {
-            "@type": "Drug",
-            "name": "Wegovy",
-            "nonProprietaryName": "Semaglutid",
-            "activeIngredient": "Semaglutid",
-            "drugClass": "GLP-1 Rezeptor-Agonist",
-            "indication": "Gewichtsmanagement bei Adipositas oder Übergewicht",
-            "availableStrength": [
-                {
-                    "@type": "DrugStrength",
-                    "strengthValue": "0.25",
-                    "strengthUnit": "mg"
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://abnehmspritzen-top.de/#organization",
+                "name": "Abnehmspritzen-top.de",
+                "url": "https://abnehmspritzen-top.de/",
+                "logo": "https://abnehmspritzen-top.de/images/logo.jpg"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://abnehmspritzen-top.de/wegovy.html#breadcrumb",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://abnehmspritzen-top.de/" },
+                    { "@type": "ListItem", "position": 2, "name": "Wegovy (Semaglutid)", "item": "https://abnehmspritzen-top.de/wegovy.html" }
+                ]
+            },
+            {
+                "@type": "MedicalWebPage",
+                "@id": "https://abnehmspritzen-top.de/wegovy.html",
+                "name": "Wegovy (Semaglutid) zum Abnehmen: Dosierung, Preis & Guide 2026",
+                "description": "Detaillierte Informationen über Wegovy zur Gewichtsreduktion, inklusive Dosierungsschema, Kosten in Deutschland und STEP-Studienergebnisse.",
+                "author": {
+                    "@type": "Person",
+                    "name": "Dr. med. Thomas Meyer",
+                    "url": "https://abnehmspritzen-top.de/about.html#meyer"
                 },
-                {
-                    "@type": "DrugStrength",
-                    "strengthValue": "0.5",
-                    "strengthUnit": "mg"
+                "reviewedBy": {
+                    "@type": "Person",
+                    "name": "Dr. rer. nat. Julia Fischer",
+                    "url": "https://abnehmspritzen-top.de/about.html#fischer"
                 },
-                {
-                    "@type": "DrugStrength",
-                    "strengthValue": "1.0",
-                    "strengthUnit": "mg"
-                },
-                {
-                    "@type": "DrugStrength",
-                    "strengthValue": "1.7",
-                    "strengthUnit": "mg"
-                },
-                {
-                    "@type": "DrugStrength",
-                    "strengthValue": "2.4",
-                    "strengthUnit": "mg"
+                "publisher": { "@id": "https://abnehmspritzen-top.de/#organization" },
+                "inLanguage": "de-DE",
+                "datePublished": "2026-01-01",
+                "dateModified": "2026-03-26",
+                "about": {
+                    "@type": "Drug",
+                    "name": "Wegovy",
+                    "nonProprietaryName": "Semaglutid",
+                    "activeIngredient": "Semaglutid",
+                    "drugClass": "GLP-1 Rezeptor-Agonist",
+                    "indication": "Gewichtsmanagement bei Adipositas oder Übergewicht",
+                    "description": "Wegovy ist ein hochwirksames Medikament zur Gewichtsreduktion auf Basis von Semaglutid.",
+                    "image": "https://abnehmspritzen-top.de/images/wegovy_pen.jpg",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Novo Nordisk"
+                    },
+                    "offers": {
+                        "@type": "AggregateOffer",
+                        "url": "https://abnehmspritzen-top.de/wegovy.html",
+                        "priceCurrency": "EUR",
+                        "lowPrice": "172.00",
+                        "highPrice": "277.00",
+                        "availability": "https://schema.org/InStock",
+                        "offerCount": "5"
+                    }
                 }
-            ]
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Abnehmspritzen-top.de",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://abnehmspritzen-top.de/images/logo.jpg"
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://abnehmspritzen-top.de/wegovy.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Was ist Wegovy und wie wirkt es?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Wegovy ist ein verschreibungspflichtiges Medikament zur Gewichtsregulierung. Der Wirkstoff Semaglutid ahmt das Hormon GLP-1 nach, das Sättigung signalisiert und den Appetit im Gehirn reguliert."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wie schnell nimmt man mit Wegovy ab?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Erste Erfolge sind oft nach wenigen Wochen sichtbar. Maximale Ergebnisse werden meist nach Erreichen der Erhaltungsdosis (2,4 mg) nach ca. 16 bis 20 Wochen erzielt."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Was sind die häufigsten Nebenwirkungen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Häufig treten Übelkeit, Erbrechen, Durchfall oder Verstopfung auf, besonders während der Dosissteigerung. Diese Symptome lassen meist nach, wenn sich der Körper an das Medikament gewöhnt hat."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Zahlt die Krankenkasse die Kosten für Wegovy?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "In Deutschland ist Wegovy meist eine Selbstzahlerleistung. Gesetzliche Krankenkassen übernehmen die Kosten aktuell nur in Ausnahmefällen zur Herzschutz-Vorsorge (Sekundärprävention)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wie unterscheidet sich Wegovy von Ozempic?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Beide enthalten Semaglutid. Ozempic ist für Typ-2-Diabetes zugelassen, Wegovy speziell für Adipositas und Übergewicht mit einer höheren Maximaldosierung."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Darf ich während der Behandlung Alkohol trinken?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Es gibt kein striktes Verbot, aber Mäßigung wird empfohlen. Alkohol kann Nebenwirkungen wie Übelkeit verstärken und die Fettverbrennung verlangsamen."
+                        }
+                    }
+                ]
             }
-        },
-        "lastReviewed": "2026-03-26",
-        "datePublished": "2026-01-01",
-        "dateModified": "2026-03-26",
-        "image": "https://abnehmspritzen-top.de/images/wegovy_pen.jpg"
-    }
-    </script>
-    <!-- Product Schema for Price & Availability (Rich Snippets) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Wegovy (Semaglutid) FlexTouch Pen",
-        "image": "https://abnehmspritzen-top.de/images/wegovy_pen.jpg",
-        "description": "Wegovy (Semaglutid) ist ein hochwirksames Medikament zur Gewichtsreduktion. Rezeptpflichtige Injektionslösung zur wöchentlichen Anwendung.",
-        "brand": {
-            "@type": "Brand",
-            "name": "Novo Nordisk"
-        },
-        "offers": {
-            "@type": "AggregateOffer",
-            "url": "https://abnehmspritzen-top.de/wegovy.html",
-            "priceCurrency": "EUR",
-            "lowPrice": "172.00",
-            "highPrice": "277.00",
-            "availability": "https://schema.org/InStock",
-            "offerCount": "5"
-        }
-    }
-    </script>
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Was ist Wegovy und wie wirkt es?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Wegovy ist ein verschreibungspflichtiges Medikament zur Gewichtsregulierung. Der Wirkstoff Semaglutid ahmt das Hormon GLP-1 nach, das Sättigung signalisiert und den Appetit im Gehirn reguliert."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie schnell nimmt man mit Wegovy ab?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Erste Erfolge sind oft nach wenigen Wochen sichtbar. Maximale Ergebnisse werden meist nach Erreichen der Erhaltungsdosis (2,4 mg) nach ca. 16 bis 20 Wochen erzielt."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Was sind die häufigsten Nebenwirkungen?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Häufig treten Übelkeit, Erbrechen, Durchfall oder Verstopfung auf, besonders während der Dosissteigerung. Diese Symptome lassen meist nach, wenn sich der Körper an das Medikament gewöhnt hat."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Zahlt die Krankenkasse die Kosten für Wegovy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In Deutschland ist Wegovy meist eine Selbstzahlerleistung. Gesetzliche Krankenkassen übernehmen die Kosten aktuell nur in Ausnahmefällen zur Herzschutz-Vorsorge (Sekundärprävention)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie unterscheidet sich Wegovy von Ozempic?",
-          "acceptedAnswer": {
-            "@type": {
-              "@type": "Answer",
-              "text": "Beide enthalten Semaglutid. Ozempic ist für Typ-2-Diabetes zugelassen, Wegovy speziell für Adipositas und Übergewicht mit einer höheren Maximaldosierung."
-            }
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Darf ich während der Behandlung Alkohol trinken?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Es gibt kein striktes Verbot, aber Mäßigung wird empfohlen. Alkohol kann Nebenwirkungen wie Übelkeit verstärken und die Fettverbrennung verlangsamen."
-          }
-        }
-      ]
+        ]
     }
     </script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
