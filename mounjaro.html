@@ -43,125 +43,114 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
-    </style>
-    <!-- Schema.org Organization Markup -->
+    </style>    <!-- Combined SEO & Schema.org Markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Abnehmspritzen-top.de",
-        "url": "https://abnehmspritzen-top.de/",
-        "logo": "https://abnehmspritzen-top.de/images/logo.jpg"
-    }
-    </script>
-    <!-- Medical Web Page Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MedicalWebPage",
-        "name": "Mounjaro (Tirzepatid) zum Abnehmen: Dosierung, Preis und Vergleich 2026",
-        "description": "Detaillierte Informationen über Mounjaro zur Gewichtsreduktion, inklusive dualem Wirkmechanismus, SURMOUNT-Studien und Kosten.",
-        "author": {
-            "@type": "Person",
-            "name": "Dr. med. Alexander Hoffmann"
-        },
-        "reviewedBy": {
-            "@type": "Person",
-            "name": "Dr. med. Sandra Krause"
-        },
-        "about": {
-            "@type": "Drug",
-            "name": "Mounjaro",
-            "nonProprietaryName": "Tirzepatid",
-            "activeIngredient": "Tirzepatid",
-            "drugClass": "GIP/GLP-1 Rezeptor-Agonist",
-            "indication": "Gewichtsmanagement bei Adipositas (BMI >= 30) oder Übergewicht (BMI >= 27) mit Begleiterkrankungen"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Abnehmspritzen-top.de"
-        },
-        "lastReviewed": "2026-03-26"
-    }
-    </script>
-    <!-- Product Schema for Price & Availability (Rich Snippets) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Mounjaro (Tirzepatid) KwikPen",
-        "image": "https://abnehmspritzen-top.de/images/mounjaro_pen.jpg",
-        "description": "Mounjaro ist ein dualer GIP/GLP-1 Rezeptor-Agonist zur effektiven Gewichtsreduktion. Rezeptpflichtiges Medikament für Adipositas Therapie.",
-        "brand": {
-            "@type": "Brand",
-            "name": "Eli Lilly"
-        },
-        "offers": {
-            "@type": "AggregateOffer",
-            "url": "https://abnehmspritzen-top.de/mounjaro.html",
-            "priceCurrency": "EUR",
-            "lowPrice": "206.00",
-            "highPrice": "489.00",
-            "availability": "https://schema.org/InStock",
-            "offerCount": "6"
-        }
-    }
-    </script>
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Was ist Mounjaro und wie wirkt es?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Mounjaro ist ein neuartiges Medikament zur Gewichtsreduktion mit dem Wirkstoff Tirzepatid. Als dualer Agonist aktiviert es sowohl GLP-1- als auch GIP-Rezeptoren, was den Appetit stärker zügelt und den Stoffwechsel effizienter reguliert als herkömmliche Mono-Therapien."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie viel Gewicht kann man mit Mounjaro verlieren?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In klinischen Studien (SURMOUNT-1) verloren Teilnehmer unter der Höchstdosis von 15 mg durchschnittlich bis zu 22,5 % ihres Körpergewichts über einen Zeitraum von 72 Wochen."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie wird Mounjaro eingenommen und richtig dosiert?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Mounjaro wird 1x wöchentlich mit einem KwikPen subkutan (unter die Haut, z.B. in Bauch oder Oberschenkel) injiziert. Die Therapie beginnt mit einer Einstiegsdosis von 2,5 mg pro Woche. Zur Vermeidung von Nebenwirkungen wird die Dosis alle vier Wochen schrittweise erhöht (5 mg, 7,5 mg, 10 mg, 12,5 mg), bis zur individuellen Erhaltungsdosis von maximal 15 mg."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Was kostet Mounjaro in Deutschland?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Die Preise für Mounjaro liegen im Jahr 2026 je nach Dosierung und Packungsgröße zwischen etwa 206 € und 489 € pro Monat. Es handelt sich in der Regel um eine Selbstzahlerleistung auf Privatrezept."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Was sind die häufigsten Nebenwirkungen?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Am häufigsten treten Magen-Darm-Beschwerden wie Übelkeit, Durchfall, Erbrechen und Verstopfung auf. Diese sind meist vorübergehend und treten vor allem während der Dosissteigerung auf."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Benötige ich ein Rezept für Mounjaro?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja, Mounjaro ist ein verschreibungspflichtiges Medikament. In Deutschland wird es für die Gewichtsreduktion meist auf Privatrezept verordnet, nachdem ein Arzt die Indikation geprüft hat."
-          }
-        }
-      ]
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://abnehmspritzen-top.de/#organization",
+                "name": "Abnehmspritzen-top.de",
+                "url": "https://abnehmspritzen-top.de/",
+                "logo": "https://abnehmspritzen-top.de/images/logo.jpg"
+            },
+            {
+                "@type": "MedicalWebPage",
+                "@id": "https://abnehmspritzen-top.de/mounjaro.html",
+                "name": "Mounjaro (Tirzepatid) zum Abnehmen: Dosierung, Preis & Vergleich 2026",
+                "description": "Detaillierte Informationen über Mounjaro zur Gewichtsreduktion, inklusive dualem Wirkmechanismus, SURMOUNT-Studien und Kosten.",
+                "author": {
+                    "@type": "Person",
+                    "name": "Dr. med. Alexander Hoffmann",
+                    "url": "https://abnehmspritzen-top.de/about.html#hoffmann"
+                },
+                "reviewedBy": {
+                    "@type": "Person",
+                    "name": "Dr. med. Sandra Krause",
+                    "url": "https://abnehmspritzen-top.de/about.html#krause"
+                },
+                "publisher": { "@id": "https://abnehmspritzen-top.de/#organization" },
+                "inLanguage": "de-DE",
+                "lastReviewed": "2026-03-26",
+                "about": {
+                    "@type": "Drug",
+                    "name": "Mounjaro",
+                    "nonProprietaryName": "Tirzepatid",
+                    "activeIngredient": "Tirzepatid",
+                    "drugClass": "GIP/GLP-1 Rezeptor-Agonist",
+                    "indication": "Gewichtsmanagement bei Adipositas (BMI >= 30) oder Übergewicht (BMI >= 27) mit Begleiterkrankungen",
+                    "description": "Mounjaro ist ein dualer GIP/GLP-1 Rezeptor-Agonist zur effektiven Gewichtsreduktion.",
+                    "image": "https://abnehmspritzen-top.de/images/mounjaro_pen.jpg",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Eli Lilly"
+                    },
+                    "offers": {
+                        "@type": "AggregateOffer",
+                        "url": "https://abnehmspritzen-top.de/mounjaro.html",
+                        "priceCurrency": "EUR",
+                        "lowPrice": "206.00",
+                        "highPrice": "489.00",
+                        "availability": "https://schema.org/InStock",
+                        "offerCount": "6"
+                    }
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Was ist Mounjaro und wie wirkt es?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mounjaro ist ein neuartiges Medikament zur Gewichtsreduktion mit dem Wirkstoff Tirzepatid. Als dualer Agonist aktiviert es sowohl GLP-1- als auch GIP-Rezeptoren, was den Appetit stärker zügelt und den Stoffwechsel effizienter reguliert als herkömmliche Mono-Therapien."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wie viel Gewicht kann man mit Mounjaro verlieren?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "In klinischen Studien (SURMOUNT-1) verloren Teilnehmer unter der Höchstdosis von 15 mg durchschnittlich bis zu 22,5 % ihres Körpergewichts über einen Zeitraum von 72 Wochen."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wie wird Mounjaro eingenommen und richtig dosiert?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mounjaro wird 1x wöchentlich mit einem KwikPen subkutan (unter die Haut, z.B. in Bauch oder Oberschenkel) injiziert. Die Therapie beginnt mit einer Einstiegsdosis von 2,5 mg pro Woche. Zur Vermeidung von Nebenwirkungen wird die Dosis alle vier Wochen schrittweise erhöht (5 mg, 7,5 mg, 10 mg, 12,5 mg), bis zur individuellen Erhaltungsdosis von maximal 15 mg."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Was kostet Mounjaro in Deutschland?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Die Preise für Mounjaro liegen im Jahr 2026 je nach Dosierung und Packungsgröße zwischen etwa 206 € und 489 € pro Monat. Es handelt sich in der Regel um eine Selbstzahlerleistung auf Privatrezept."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Was sind die häufigsten Nebenwirkungen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Am häufigsten treten Magen-Darm-Beschwerden wie Übelkeit, Durchfall, Erbrechen und Verstopfung auf. Diese sind meist vorübergehend und treten vor allem während der Dosissteigerung auf."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Benötige ich ein Rezept für Mounjaro?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja, Mounjaro ist ein verschreibungspflichtiges Medikament. In Deutschland wird es für die Gewichtsreduktion meist auf Privatrezept verordnet, nachdem ein Arzt die Indikation geprüft hat."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
