@@ -171,6 +171,24 @@
       ]
     }
     </script>
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "https://abnehmspritzen-top.de/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Mysimba & Xenical",
+        "item": "https://abnehmspritzen-top.de/mysimba-xenical.html"
+      }]
+    }
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-800 antialiased min-h-screen flex flex-col">
@@ -181,7 +199,7 @@
                 <div class="flex items-center space-x-4">
                     <a href="https://abnehmspritzen-top.de/" class="flex items-center hover:opacity-90 transition-opacity">
                         <img src="images/logo.jpg" alt="Die Top 5 Abnehmspritzen & Medikamente 2026"
-                            class="h-12 w-auto">
+                            class="h-12 w-auto" loading="lazy" decoding="async">
                     </a>
                 </div>
 
@@ -226,7 +244,7 @@
                     </h1>
 
                     <p class="text-xl md:text-2xl text-green-50/80 max-w-2xl leading-relaxed font-medium mb-10">
-                        Für Patienten, die Injektionen ablehnen oder GLP-1 Medikamente nicht vertragen, bieten diese
+                        Für Patienten, die Injektionen ablehnen или GLP-1 Medikamente (wie <a href="https://abnehmspritzen-top.de/wegovy.html" class="text-white underline decoration-brand-400">Wegovy</a> или <a href="https://abnehmspritzen-top.de/ozempic.html" class="text-white underline decoration-m-400">Ozempic</a>) nicht vertragen, bieten diese
                         <strong>Tabletten zum Abnehmen</strong> bewährte, wissenschaftlich fundierte Wege zur <strong>Gewichtsreduktion</strong> als effektive <strong>Abnehmspritze Alternative</strong>.
                     </p>
 
@@ -247,7 +265,7 @@
                     <div class="relative">
                         <div class="absolute inset-0 bg-brand-500/20 blur-[60px] rounded-full"></div>
                         <img src="images/mysimba_pills.jpg" alt="Mysimba und Xenical Tabletten als Alternative zur Abnehmspritze"
-                            class="relative z-10 w-full h-auto rounded-[3rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border-4 border-white/10 glass-card">
+                            class="relative z-10 w-full h-auto rounded-[3rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border-4 border-white/10 glass-card" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -310,12 +328,18 @@
                     </div>
                 </div>
 
+                <!-- Breadcrumbs Visual -->
+                <nav class="flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-gray-400 mb-10">
+                    <a href="https://abnehmspritzen-top.de/" class="hover:text-brand-600 transition-colors">START</a>
+                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                    <span class="text-gray-900">MYSIMBA & XENICAL GUIDE</span>
+                </nav>
+
                 <!-- Deep Dive: Mysimba -->
-                <section class="mb-24">
+                <section class="mb-24" id="mysimba-naltrexon-bupropion">
                     <div class="flex items-center mb-8">
                         <span class="w-12 h-1.5 bg-blue-600 rounded-full mr-4"></span>
-                        <h2 class="text-4xl font-black text-gray-900 tracking-tight">Mysimba (Naltrexon / Bupropion): Der Appetitzügler
-                        </h2>
+                        <h2 class="text-4xl font-black text-gray-900 tracking-tight">Mysimba (Naltrexon / Bupropion)</h2>
                     </div>
 
                     <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-8">
@@ -361,7 +385,7 @@
                 </section>
 
                 <!-- Deep Dive: Orlistat -->
-                <section class="mb-24">
+                <section class="mb-24" id="orlistat-xenical-alli">
                     <div class="flex items-center mb-8">
                         <span class="w-12 h-1.5 bg-brand-600 rounded-full mr-4"></span>
                         <h2 class="text-4xl font-black text-gray-900 tracking-tight">Orlistat: Xenical & Alli zur Gewichtsreduktion</h2>
@@ -407,7 +431,7 @@
                                 class="w-16 h-16 bg-brand-500/20 rounded-2xl flex items-center justify-center mr-6 border border-brand-500/30">
                                 <i data-lucide="info" class="text-brand-400 w-8 h-8"></i>
                             </div>
-                            <h2 class="text-3xl md:text-5xl font-black mb-0 tracking-tight">Status & Verfügbarkeit 2026
+                            <h2 class="text-3xl md:text-5xl font-black mb-0 tracking-tight" id="status-verfuegbarkeit-2026">Status & Verfügbarkeit 2026
                             </h2>
                         </div>
 
@@ -446,7 +470,7 @@
                 </div>
 
                 <!-- Comparison -->
-                <div class="mt-24 text-center">
+                <div class="mt-24 text-center" id="oral-vs-injectable">
                     <h2 class="text-4xl font-black text-gray-900 mb-12">Oral vs. Injectable (Abnehmspritzen Vergleich)</h2>
                     <div class="overflow-x-auto rounded-3xl border border-gray-100 shadow-2xl">
                         <table class="min-w-full divide-y divide-gray-200">
@@ -454,7 +478,7 @@
                                 <tr class="bg-gray-50 uppercase text-[10px] font-black tracking-widest text-gray-400">
                                     <th class="px-8 py-6 text-left">Merkmal</th>
                                     <th class="px-8 py-6 text-left">Mysimba / Xenical</th>
-                                    <th class="px-8 py-6 text-left text-brand-700">Abnehmspritzen (Wegovy etc.)</th>
+                                    <th class="px-8 py-6 text-left text-brand-700">Abnehmspritzen (<a href="https://abnehmspritzen-top.de/wegovy.html" class="text-brand-700 underline hover:text-brand-500">Wegovy</a>, <a href="https://abnehmspritzen-top.de/ozempic.html" class="text-brand-700 underline hover:text-brand-500">Ozempic</a>)</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-100 text-sm font-medium text-gray-700">
@@ -476,7 +500,7 @@
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="px-8 py-6 font-bold text-gray-900">Zielgruppe</td>
                                     <td class="px-8 py-6 italic text-gray-500">Nadelaversion / Cravings</td>
-                                    <td class="px-8 py-6">Starker Metabolischer Fokus</td>
+                                    <td class="px-8 py-6"><a href="https://abnehmspritzen-top.de/mounjaro.html" class="text-brand-600 font-bold hover:underline">Mounjaro</a> / Wegovy Metabolischer Fokus</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -614,19 +638,23 @@
                         <ul class="space-y-3 text-xs text-gray-500 list-none p-0">
                             <li class="flex items-start">
                                 <span class="font-bold mr-2 text-gray-400">1.</span>
-                                <span><strong>EMA (European Medicines Agency). (2015/2026).</strong> Mysimba (Naltrexone/Bupropion): Summary of Product Characteristics and clinical assessment reports.</span>
+                                <span><strong>EMA (European Medicines Agency). (2015/2026).</strong> <a href="https://www.ema.europa.eu/en/medicines/human/EPAR/mysimba" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:underline">Mysimba (Naltrexone/Bupropion): Summary of Product Characteristics and clinical assessment reports.</a></span>
                             </li>
                             <li class="flex items-start">
                                 <span class="font-bold mr-2 text-gray-400">2.</span>
-                                <span><strong>Greenway, F. L., et al. (2010).</strong> Effect of naltrexone plus bupropion on weight loss in overweight and obese adults (COR-I): a multicentre, randomised, double-blind, placebo-controlled, phase 3 trial. <em>The Lancet.</em></span>
+                                <span><strong>Greenway, F. L., et al. (2010).</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/20673903/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:underline">Effect of naltrexone plus bupropion on weight loss in overweight and obese adults (COR-I).</a> <em>The Lancet.</em></span>
                             </li>
                             <li class="flex items-start">
                                 <span class="font-bold mr-2 text-gray-400">3.</span>
-                                <span><strong>Torgerson, J. S., et al. (2004).</strong> XENical in the Prevention of Diabetes in Obese Subjects (XENDOS) study. <em>Diabetes Care.</em></span>
+                                <span><strong>Torgerson, J. S., et al. (2004).</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/14693982/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:underline">XENical in the Prevention of Diabetes in Obese Subjects (XENDOS) study.</a> <em>Diabetes Care.</em></span>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="font-bold mr-2 text-gray-400">4.</span>
+                                <span><strong>EMA. (2026).</strong> <a href="https://www.ema.europa.eu/en/medicines/human/EPAR/xenical" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:underline">Xenical (Orlistat): European Public Assessment Report (EPAR) update.</a></span>
                             </li>
                             <li class="flex items-start">
-                                <span class="font-bold mr-2 text-gray-400">4.</span>
-                                <span><strong>EMA. (2026).</strong> Xenical (Orlistat): European Public Assessment Report (EPAR) update on safety and efficacy markers.</span>
+                                <span class="font-bold mr-2 text-gray-400">5.</span>
+                                <span><strong>BfArM (Bundesinstitut für Arzneimittel und Medizinprodukte).</strong> <a href="https://www.bfarm.de/DE/Arzneimittel/Pharmakovigilanz/Risikoinformationen/_node.html" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:underline">Aktuelle Risikoinformationen und Fachinformationen zu Naltrexon/Bupropion und Orlistat.</a></span>
                             </li>
                         </ul>
                     </div>
@@ -653,6 +681,8 @@
             <nav class="flex space-x-8 mb-6">
                 <a href="https://abnehmspritzen-top.de/" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Startseite</a>
                 <a href="https://abnehmspritzen-top.de/about.html" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Über uns</a>
+                <a href="https://abnehmspritzen-top.de/impressum.html" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Impressum</a>
+                <a href="https://abnehmspritzen-top.de/datenschutz.html" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Datenschutz</a>
                 <a href="https://abnehmspritzen-top.de/kontakt.html" class="text-sm font-bold text-gray-500 hover:text-brand-600 transition-colors uppercase tracking-widest no-underline">Kontakt</a>
             </nav>
             <div class="text-sm font-medium text-gray-400">
