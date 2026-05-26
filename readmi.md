@@ -7,6 +7,7 @@
 - New directory `news/` for housing article pages.
 - Professional medical image `news-cancer-research.png` generated and added to `images/`.
 - All years updated to 2026 for consistency with current context.
+- Added news article URL and updated the homepage lastmod date in `sitemap.xml`.
 
 ### Fixed
 - Typo corrections in the German text of `news/glp1-krebs-studie-2024-2026.html` ("и" -> "und", "Entзündungen" -> "Entzündungen").
