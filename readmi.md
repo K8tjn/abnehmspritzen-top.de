@@ -8,11 +8,12 @@
 - Professional medical image `news-cancer-research.png` generated and added to `images/`.
 - All years updated to 2026 for consistency with current context.
 - Added news article URL and updated the homepage lastmod date in `sitemap.xml`.
+- Added internal links to `Ozempic`, `Wegovy`, `Mounjaro` in the study paragraph and a full links block (incl. `Saxenda`) in the Fazit section of `news/glp1-krebs-studie-2024-2026.html`.
 
 ### Fixed
 - Typo corrections in the German text of `news/glp1-krebs-studie-2024-2026.html` ("и" -> "und", "Entзündungen" -> "Entzündungen").
 
 ### Verified & Backed Up
 - Verified all internal HTML links, assets, and language correctness.
-- Created full project ZIP backup in `D:\Backap\abnehmspritzen-top.de\`.
+- Created full project ZIP backups in `D:\Backap\abnehmspritzen-top.de\` (latest: `backup_2026-05-26_16-46-47.zip`).
 
